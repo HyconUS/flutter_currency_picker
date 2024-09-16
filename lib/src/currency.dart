@@ -51,17 +51,17 @@ class Currency {
   });
 
   Currency.from({required Map<String, dynamic> json})
-      : code = json['code'],
-        name = json['name'],
-        symbol = json['symbol'],
-        number = json['number'],
-        flag = json['flag'],
-        decimalDigits = json['decimal_digits'],
-        namePlural = json['name_plural'],
-        symbolOnLeft = json['symbol_on_left'],
-        decimalSeparator = json['decimal_separator'],
-        thousandsSeparator = json['thousands_separator'],
-        spaceBetweenAmountAndSymbol = json['space_between_amount_and_symbol'];
+      : code = json['code'] as String,
+        name = json['name'] as String,
+        symbol = json['symbol'] as String,
+        number = json['number'] as int?,
+        flag = json['flag'] as String?,
+        decimalDigits = json['decimal_digits'] as int,
+        namePlural = json['name_plural'] as String,
+        symbolOnLeft = json['symbol_on_left'] as bool,
+        decimalSeparator = json['decimal_separator'] as String,
+        thousandsSeparator = json['thousands_separator'] as String,
+        spaceBetweenAmountAndSymbol = json['space_between_amount_and_symbol'] as bool;
 
   Map<String, dynamic> toJson() => {
         'code': code,

@@ -14,10 +14,10 @@ List<Map<String, dynamic>> currencies = [
     "symbol_on_left": true,
   },
   {
-    "code": "MATIC",
+    "code": "POL",
     "name": "Polygon",
-    "symbol": 'matic_logo.png',
-    "flag": "MATIC",
+    "symbol": 'pol_logo.png',
+    "flag": "POL",
     "decimal_digits": 4,
     "name_plural": "Polygon",
     "thousands_separator": ",",
